@@ -14,10 +14,6 @@ app.use(express.static('public'));
 app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
-// Route returns the index.html file
-app.get('*', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/index.html')
-));
 
 // Route for notes page
 app.get('/notes', (req, res) =>
@@ -43,6 +39,11 @@ app.post('/api/notes', (req,res) => {
   fs.writeFileSync("db/db.json", JSON.stringify(parseDb));
   res.json(parseDb);
 });
+
+// Route returns the index.html file
+app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, '/public/index.html')
+));
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT}`)
