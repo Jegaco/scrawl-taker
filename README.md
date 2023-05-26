@@ -3,13 +3,14 @@
 Note taking tool using Express.js
 
 ## Description
-Appication that allows users to create, save and delete notes using Express and Node.js
+Appication that allows users to create, save and delete notes using Express and Node.js. 
 
-## Screenshots
-
+## Screenshot
+![Application](./Assets/Note%20Taker.png)
 
 ## Deployed Application Links:
-
+* Github Repo: https://github.com/Jegaco/scrawl-taker
+* Depolyed application: https://scrawl-taker.herokuapp.com/
 
 ## Built With
 - Heroku:[ Heroku ](https://www.heroku.com/)
